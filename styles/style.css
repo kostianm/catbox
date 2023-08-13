@@ -1,0 +1,45 @@
+.main {
+    margin: 250px auto;
+    width: 700px;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    margin: 0 auto;
+    width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.cat {
+    width: 150px;
+    position: absolute;
+    top: 160px;
+    left: 35%;
+    z-index: 0;
+}
+
+@keyframes catinbox {
+    70% {top: 50px; z-index: 0;}
+    100% {top: 0; z-index: 2;}
+}
+.cat-up {
+   animation-name: catinbox;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+   padding: 1rem;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+   cursor: pointer;
+}
